@@ -1,5 +1,4 @@
-# https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master
-baseURL = 'http://example.org/'
+baseURL = 'https://tbennacer.github.io/tbennacer-website/'
 languageCode = 'en-us'
 title = 'Tasnim Bennacer 💻'
 theme = "hugo-theme-stack"
