@@ -1,0 +1,93 @@
+# https://github.com/CaiJimmy/hugo-theme-stack-starter/tree/master
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Tasnim Bennacer 💻'
+theme = "hugo-theme-stack"
+
+[params]
+mainSections = [ "post" ]
+featuredImageField = "image"
+
+  [params.footer]
+  since = 2023
+
+  [params.dateFormat]
+  published = "Jan 02, 2006"
+  lastUpdated = "Jan 02, 2006 15:04 MST"
+
+  [params.sidebar]
+  subtitle = "Program Or Be Programmed"
+
+    [params.sidebar.avatar]
+    enabled = true
+    local = true
+    src = "img/tbennacer-profile.png"
+
+  [[params.widgets.homepage]]
+  type = "search"
+
+  [[params.widgets.homepage]]
+  type = "archives"
+
+    [params.widgets.homepage.params]
+    limit = 5
+
+  [[params.widgets.homepage]]
+  type = "tag-cloud"
+
+    [params.widgets.homepage.params]
+    limit = 10
+
+  [[params.widgets.page]]
+  type = "toc"
+  
+
+[menu]
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+    identifier = "home"
+    [menu.main.params]
+        icon = "home"
+        newTab = false
+
+  [[menu.social]]
+  identifier = "linkedin"
+  name = "Linkedin"
+  url = "https://www.linkedin.com/in/tasnim-bennacer/?locale=en_US"
+
+    [menu.social.params]
+    icon = "brand-linkedin"
+
+  [[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/tbennacer"
+
+    [menu.social.params]
+    icon = "brand-github"
+  
+  [[menu.social]]
+  identifier = "discord"
+  name = "Discord"
+  url = "https://discord.com"
+
+    [menu.social.params]
+    icon = "brand-discord"
+  
+  [[menu.social]]
+  identifier = "curriculum-vitae"
+  name = "CurriculumVitae"
+  url = "https://drive.google.com/file/d/1qjaP0XUU_wkYYK2DJgL1hgxptkocwqe1/view?usp=share_link"
+
+    [menu.social.params]
+    icon = "curriculum-vitae"
+  
+  [[menu.social]]
+  identifier = "email"
+  name = "Email"
+  url = "mailto:tbennacer00@gmail.com"
+
+    [menu.social.params]
+    icon = "mail"
